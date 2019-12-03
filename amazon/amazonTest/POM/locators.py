@@ -1,0 +1,25 @@
+from selenium.webdriver.common.by import By
+
+
+class MainPageLocators:
+    NAV_SIGN_IN = "nav-link-accountList"
+    USERNAME = "ap_email"
+    PASSWORD = "ap_password"
+    username = "test34.deneme.deneme@gmail.com"
+    password = "wsxzaq1"
+    CONTINUE = "continue"
+    SIGN_IN = "signInSubmit"
+    SEARCHING = "twotabsearchtextbox"
+    search_input = "Samsung"
+    PAGINATION = "//*[@id='search']/div[1]/div[2]/div/span[8]/div/span/div/div/ul/li[3]/a"
+    PRODUCT = "/html/body/div[1]/div[1]/div[1]/div[2]/div/span[4]/div[1]/div[3]/div/span/div/div/div[2]/div[2]/div/div[1]/div/div/div[1]/h2/a"
+    ADD_TO_LIST = "add-to-wishlist-button"
+    WISH_LIST = "//ul[@id = 'atwl-dd-ul']/li[3]"
+    VIEW_LIST = "WLHUC_viewlist"
+    WISH_LIST_DELETE = "//*[@id='a-autoid-7']/span/input"
+    SEARCH_CLICK = "//*[@id='nav-search']/form/div[2]/div/input"
+    ROBOT_CHECK ="a-column a-span6 a-span-last a-text-right"
+    PAGINATION_TWO_TEXT = "//*[@id='search']/span[2]/h1/div/div[1]/div/div/span[1]"
+    IS_WISH_LIST = "//*[@id='search']/span[2]/h1/div/div[1]/div/div/span[1]"
+    IS_SEARCHING_PAGE= "https://www.amazon.com/s?k=samsung&ref=nb_sb_noss_2"
+    IS_WISH_LIST_DELETE = "//*[@id='item_IQ7YT8R70O9SW']/div[2]/div/div/div"
