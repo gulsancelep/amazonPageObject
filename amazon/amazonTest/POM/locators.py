@@ -17,7 +17,7 @@ class MainPageLocators:
     WISH_LIST = "//ul[@id = 'atwl-dd-ul']/li[3]"
     VIEW_LIST = "WLHUC_viewlist"
     WISH_LIST_DELETE = "//*[@id='a-autoid-7']/span/input"
-    SEARCH_CLICK = "//*[@id='nav-search']/form/div[2]/div/input"
+    SEARCH_CLICK = "nav-search-submit nav-sprite"
     ROBOT_CHECK ="a-column a-span6 a-span-last a-text-right"
     PAGINATION_TWO_TEXT = "//*[@id='search']/span[2]/h1/div/div[1]/div/div/span[1]"
     IS_WISH_LIST = "//*[@id='search']/span[2]/h1/div/div[1]/div/div/span[1]"

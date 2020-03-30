@@ -2,23 +2,23 @@ from amazon.amazonTest.POM.locators import MainPageLocators
 from amazon.amazonTest.POM.actions.actionPage import Actions
 
 
-class BasePage(object):
-
-    def __init__(self, driver):
-        self.driver = driver
-        self.Actions_Wait = Actions(driver)
-
-
-class MainPage(BasePage):
+class MainPage(Actions):
 
     def is_amazon(self):
         assert "https://www.amazon.com/" in self.driver.current_url
 
     def click_nav_sign_in(self):
-        self.Actions_Wait.click(MainPageLocators.NAV_SIGN_IN, "ID")
+        Actions.click(MainPageLocators.NAV_SIGN_IN, "ID")
 
     def searching(self):
-        self.Actions_Wait.input(MainPageLocators.SEARCHING, MainPageLocators.search_input)
+        Actions.input(MainPageLocators.SEARCHING, MainPageLocators.search_input)
 
     def searching_click(self):
-        self.Actions_Wait.click(MainPageLocators.SEARCH_CLICK, "XPATH")
+        Actions.click(MainPageLocators.SEARCH_CLICK, "XPATH")
+        Actions.click(MainPageLocators.NAV_SIGN_IN, "ID")
+
+    def searching(self):
+        Actions.input(MainPageLocators.SEARCHING, MainPageLocators.search_input)
+
+    def searching_click(self):
+        Actions.click(MainPageLocators.SEARCH_CLICK, "CLASS_NAME")
